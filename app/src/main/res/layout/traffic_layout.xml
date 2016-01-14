@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LinerLayout">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Red"
+        android:id="@+id/buttonRed"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/redColor"
+        android:onClick="onRedButtonClick"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Yellow"
+        android:id="@+id/buttonYellow"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/yellowColor"
+        android:onClick="onYellowButtonClick"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/buttonRed"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Black"
+        android:background="@color/blackColor"
+        android:onClick="onBlackButtonClick"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/buttonYellow"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Red"
+        android:id="@+id/text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="401dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp" />
+
+</RelativeLayout>
